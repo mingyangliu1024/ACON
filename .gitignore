@@ -1,0 +1,16 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+algorithms/
+configs/
+dataloader/
+
+logs/
+data/
+*.py[cod]
+*.pt
+*.arff
+*.png
+*.pkl
+*.pickle
+*.xlsx
