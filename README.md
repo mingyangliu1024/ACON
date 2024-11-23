@@ -19,7 +19,8 @@ Official implementation of the paper [[Boosting Transferability and Discriminabi
 - [[CAP](https://woods-benchmarks.github.io/cap.html)]
 
 Data directory structure
-```.
+```
+.
 └── data
     └── CAP
         ├── test_0.pt
