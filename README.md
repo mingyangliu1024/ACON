@@ -6,7 +6,7 @@ Official implementation of the paper [[Boosting Transferability and Discriminabi
 
 - We design ACON, which enhances UDA in three key aspects: a multi-period feature learning module to enhance the discriminability of frequency features, a temporal-frequency domain mutual learning module to enhance the discriminability of temporal features in the source domain and improve the transferability of frequency features in the target domain, and a domain adversarial learning module in temporal-frequency correlation subspace to further enhance transferability of features.
 
-- Experiments conducted on eights time series datasets and five common applications verify the effectiveness of ACON.
+- Experiments conducted on eights time series datasets and five common applications verify the effectiveness.
 
 ## Datasets
 - [[UCIHAR](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/0SYHTZ)]
@@ -17,6 +17,27 @@ Official implementation of the paper [[Boosting Transferability and Discriminabi
 - [[FD](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/PU85XN)]
 - [[PCL](https://woods-benchmarks.github.io/pcl.html)]
 - [[CAP](https://woods-benchmarks.github.io/cap.html)]
+
+Data directory structure
+```.
+└── data
+    └── CAP
+        ├── test_0.pt
+        ├── test_1.pt
+        ├── test_2.pt
+        ├── test_3.pt
+        ├── test_4.pt
+        ├── train_0.pt
+        ├── train_1.pt
+        ├── train_2.pt
+        ├── train_3.pt
+        └── train_4.pt
+    
+    └── UCIHAR
+      ......
+    └── WISDM
+      ......
+```
 
 ## How to Run
 
