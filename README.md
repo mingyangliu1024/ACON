@@ -47,7 +47,7 @@ Detailed domain pairs are provided in [[data_model_configs](https://github.com/m
 
 Each experiment is repeated **5** times with different random seeds (1, 2, 3, 4, 5).
 
-All bash scripts are provided in ./scripts.
+All bash scripts are provided in [[scripts](https://github.com/mingyangliu1024/ACON/tree/main/scripts)].
 
 To train a model on UCIHAR dataset:
 ```
