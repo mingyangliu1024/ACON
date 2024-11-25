@@ -41,7 +41,13 @@ Data directory structure
 ```
 
 ## How to Run
-For example, to train a model on UCIHAR dataset:
+For each dataset, we select **10** source-target domain pairs (detailed domain pairs are provided in [[data_model_configs](https://github.com/mingyangliu1024/ACON/blob/main/configs/data_model_configs.py)]). 
+
+Each experiment is repeated **5** times with different random seeds (1, 2, 3, 4, 5).
+
+All bash scripts are provided in ./scripts.
+
+To train a model on UCIHAR dataset:
 ```
 CUDA_VISIBLE_DEVICES=0 python main.py \
  --experiment_description ACON \
@@ -56,7 +62,6 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
  --align_t_trade_off 1 \
  --align_s_trade_off 1
 ```
-All bash scripts are provided in ./scripts.
 
 ## Citation
 If you find this work helpful for your research, please kindly cite the following paper:
