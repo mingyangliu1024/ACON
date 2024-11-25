@@ -77,8 +77,8 @@ class da_trainer(object):
 
 
         scenarios = self.dataset_configs.scenarios  # return the scenarios given a specific dataset.
-        df_a = pd.DataFrame(columns=['scenario','run_id','accuracy','f1','H-score'])
-        df_s = pd.DataFrame(columns=['scenario','run_id','accuracy','f1','H-score'])
+        df_a = pd.DataFrame(columns=['scenario','run_id','accuracy','f1'])
+        df_s = pd.DataFrame(columns=['scenario','run_id','accuracy','f1'])
         self.trg_acc_list = []
         for i in scenarios[self.args.start:self.args.end]:
             src_id = i[0]
@@ -149,8 +149,8 @@ class da_trainer(object):
                 file.write('--'+arg+'\n')
 
         scenarios = self.dataset_configs.scenarios  # return the scenarios given a specific dataset.
-        df_a = pd.DataFrame(columns=['scenario','run_id','accuracy','f1','H-score'])
-        df_s = pd.DataFrame(columns=['scenario','run_id','accuracy','f1','H-score'])
+        df_a = pd.DataFrame(columns=['scenario','run_id','accuracy','f1'])
+        df_s = pd.DataFrame(columns=['scenario','run_id','accuracy','f1'])
         self.trg_acc_list = []
         for i in scenarios[self.args.start:self.args.end]:
             src_id = i[0]
@@ -312,7 +312,12 @@ class da_trainer(object):
         all_mean_f1 = mean_f1['f1'].mean()
         all_mean_acc_std = std_acc['accuracy'].mean()
         all_mean_f1_std = std_f1['f1'].mean()
-        log = [{'scenario':all_mean_acc,
+        log = [
+            {'scenario':'all_mean_acc',
+                'run_id':'all_mean_acc_std',
+                'accuracy':'all_mean_f1',
+                'f1':'all_mean_f1_std'},
+            {'scenario':all_mean_acc,
                 'run_id':all_mean_acc_std,
                 'accuracy':all_mean_f1,
                 'f1':all_mean_f1_std}]
