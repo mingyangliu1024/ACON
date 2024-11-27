@@ -9,14 +9,14 @@ Official implementation of the paper [[Boosting Transferability and Discriminabi
 - Experiments conducted on eights time series datasets and five common applications verify the effectiveness.
 
 ## Datasets
-- [[UCIHAR](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/0SYHTZ)]
-- [[HHAR-P](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/OWDFXO)]
-- [[WISDM](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/KJWE5B)]
-- [[HHAR-D](https://woods-benchmarks.github.io/hhar.html)]
-- [[EMG](https://github.com/microsoft/robustlearn/tree/main/diversify)]
-- [[FD](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/PU85XN)]
-- [[PCL](https://woods-benchmarks.github.io/pcl.html)]
-- [[CAP](https://woods-benchmarks.github.io/cap.html)]
+- [UCIHAR](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/0SYHTZ)
+- [HHAR-P](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/OWDFXO)
+- [WISDM](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/KJWE5B)
+- [HHAR-D](https://woods-benchmarks.github.io/hhar.html)
+- [EMG](https://github.com/microsoft/robustlearn/tree/main/diversify)
+- [FD](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/PU85XN)
+- [PCL](https://woods-benchmarks.github.io/pcl.html)
+- [CAP](https://woods-benchmarks.github.io/cap.html)
 
 Data directory structure
 ```
@@ -43,11 +43,11 @@ Data directory structure
 ## How to Run
 For each dataset, we select **10** source-target domain pairs. 
 
-Detailed domain pairs are provided in [[data_model_configs](https://github.com/mingyangliu1024/ACON/blob/main/configs/data_model_configs.py)]. 
+Detailed domain pairs are provided in [data_model_configs](https://github.com/mingyangliu1024/ACON/blob/main/configs/data_model_configs.py). 
 
 Each experiment is repeated **5** times with different random seeds (1, 2, 3, 4, 5).
 
-All bash scripts are provided in [[scripts](https://github.com/mingyangliu1024/ACON/tree/main/scripts)].
+All bash scripts are provided in [scripts](https://github.com/mingyangliu1024/ACON/tree/main/scripts).
 
 To train a model on UCIHAR dataset:
 ```
@@ -68,9 +68,9 @@ CUDA_VISIBLE_DEVICES=0 python main.py \
 ## Acknowledgement
 This repo is built on the pioneer works. We appreciate the following GitHub repos a lot for their valuable code base or datasets:
 
-- [RAINCOAT(https://github.com/mims-harvard/Raincoat)]
+- [RAINCOAT](https://github.com/mims-harvard/Raincoat)
 
-- [AdaTime(https://github.com/emadeldeen24/AdaTime)]
+- [AdaTime](https://github.com/emadeldeen24/AdaTime)
 
 ## Citation
 If you find this work helpful for your research, please kindly cite the following paper:
