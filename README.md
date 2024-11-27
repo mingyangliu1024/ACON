@@ -45,7 +45,7 @@ For each dataset, we select **10** source-target domain pairs.
 
 Detailed domain pairs are provided in [data_model_configs](https://github.com/mingyangliu1024/ACON/blob/main/configs/data_model_configs.py). 
 
-Each experiment is repeated **5** times with different random seeds (1, 2, 3, 4, 5).
+Each experiment is repeated **5** times with different random seeds.
 
 All bash scripts are provided in [scripts](https://github.com/mingyangliu1024/ACON/tree/main/scripts).
 
