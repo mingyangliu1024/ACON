@@ -48,38 +48,19 @@ class CNN(nn.Module):
         self.out_dim = configs.t_feat_dim
 
     def forward(self, x_in):
-        #print(x_in.shape)
         x = self.conv_block1(x_in)
-        #print('conv_block1 {}'.format(x.shape))
         x = self.conv_block2(x)
-        #print('conv_block2 {}'.format(x.shape))
         x = self.conv_block3(x)
-        #print('conv_block3 {}'.format(x.shape))
         x = self.adaptive_pool(x)
-        #print('adaptive_pool {}'.format(x.shape))
         x_flat = x.reshape(x.shape[0], -1)
         return x_flat
 
 
 
-class classifier(nn.Module):
-    def __init__(self, configs, tmp=0.1, with_f_feat=False):
-        super(classifier, self).__init__()
-        if with_f_feat:
-            model_output_dim = configs.t_feat_dim + configs.f_feat_dim
-        else:
-            model_output_dim = configs.t_feat_dim 
-        self.logits = nn.Linear(model_output_dim, configs.num_classes, bias=False)
-        self.tmp= tmp
-
-    def forward(self, x):
-        predictions = self.logits(x)/self.tmp
-        return predictions
-
-    
 
 
 class TemporalClassifierHead(nn.Module):
+
     def __init__(self, in_dim, num_classes, bias=True):
         super(TemporalClassifierHead, self).__init__()
         self.head = nn.Linear(in_dim, num_classes, bias=bias)
@@ -90,7 +71,8 @@ class TemporalClassifierHead(nn.Module):
     
 
 class FrequencyClassifierHead(nn.Module):
-    def __init__(self, in_dim, num_classes, tmp=0.1, bias=True):
+
+    def __init__(self, in_dim, num_classes, bias=True):
         super(FrequencyClassifierHead, self).__init__()
         self.linear1 = nn.Linear(in_dim, in_dim)
         self.linear2 = nn.Linear(in_dim, num_classes, bias=bias)
@@ -106,13 +88,10 @@ class FrequencyClassifierHead(nn.Module):
     
 
 class Discriminator(nn.Module):
+
     def __init__(self, in_dim, disc_hid_dim, layer_num=3):
         """Init discriminator."""
         super(Discriminator, self).__init__()
-
-        self.restored = False
-
-
         if layer_num == 3:
             self.layer = nn.Sequential(
                 nn.Linear(in_dim, disc_hid_dim),
@@ -137,6 +116,7 @@ class Discriminator(nn.Module):
 
 
 class FrequencyEncoder(nn.Module):
+
     def __init__(self, in_channels, out_channels, mode, normalize=False):
         super(FrequencyEncoder, self).__init__()
         self.normalize = normalize
@@ -154,7 +134,6 @@ class FrequencyEncoder(nn.Module):
         elif dim_num == 4:
             # (b, c, period_num, period_length)
             return torch.einsum("bixy,ioy->boxy", input, weights)
-    
 
     def forward(self, x):
         batchsize = x.size(0)
