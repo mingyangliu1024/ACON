@@ -1,5 +1,5 @@
 # ACON (NeurIPS 2024)
-Official implementation of the paper [Boosting Transferability and Discriminability for Time Series Domain Adaptation](https://openreview.net/pdf?id=cIBSsXowMr).
+Official implementation of our NeurIPS 2024 paper [Boosting Transferability and Discriminability for Time Series Domain Adaptation](https://openreview.net/pdf?id=cIBSsXowMr).
 
 ## Contributions
 - We uncover the characteristics wherein temporal features and frequency features cannot be equally treated in transfer learning. Specifically, we observe that frequency features are more discriminative within a specific domain, while temporal features show better transferability across domains through empirical findings.
