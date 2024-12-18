@@ -101,7 +101,7 @@ class ACON(Algorithm):
         trg_t_feat = self.t_feature_extractor(trg_x)
         trg_t_pred = self.t_classifier(trg_t_feat)
 
-        # concatenate features and predictions
+        # concatenate features
         feat_concat = torch.cat((src_t_feat, trg_t_feat), dim=0)
 
         
