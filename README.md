@@ -12,11 +12,19 @@ Official implementation of our NeurIPS 2024 paper [Boosting Transferability and 
 - [UCIHAR](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/0SYHTZ)
 - [HHAR-P](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/OWDFXO)
 - [WISDM](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/KJWE5B)
+- [FD](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/PU85XN)
 - [HHAR-D](https://woods-benchmarks.github.io/hhar.html)
 - [EMG](https://github.com/microsoft/robustlearn/tree/main/diversify)
-- [FD](https://researchdata.ntu.edu.sg/dataset.xhtml?persistentId=doi:10.21979/N9/PU85XN)
 - [PCL](https://woods-benchmarks.github.io/pcl.html)
 - [CAP](https://woods-benchmarks.github.io/cap.html)
+
+The train/test set split of HHAR_D, EMG, PCL, CAP:
+
+- [HHAR_D](https://drive.google.com/file/d/17CBFtmJpxXNyxgA5HH7gB0JURdJdIA04/view?usp=sharing)
+- [EMG](https://drive.google.com/file/d/1RgO8gtJSecdqGyir7RamjjqbcesFsFce/view?usp=sharing)
+- [PCL](https://drive.google.com/file/d/1MUVL4_cUcNHeKEVafaf-h2uGretcRAfH/view?usp=sharing)
+- [CAP]()
+
 
 Data directory structure
 ```

@@ -1,6 +1,6 @@
 """
 @author: Mingyang Liu
-@contact: mingyang1024@gmail.com
+@contact: mingyangliu1024@gmail.com
 """
 
 def get_dataset_class(dataset_name):
