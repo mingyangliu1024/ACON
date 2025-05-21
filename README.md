@@ -23,7 +23,7 @@ The train/test set split of HHAR_D, EMG, PCL, CAP:
 - [HHAR_D](https://drive.google.com/file/d/17CBFtmJpxXNyxgA5HH7gB0JURdJdIA04/view?usp=sharing)
 - [EMG](https://drive.google.com/file/d/1RgO8gtJSecdqGyir7RamjjqbcesFsFce/view?usp=sharing)
 - [PCL](https://drive.google.com/file/d/1MUVL4_cUcNHeKEVafaf-h2uGretcRAfH/view?usp=sharing)
-- [CAP]()
+- [CAP](https://mega.nz/file/4BxgUKjC#LnFSQ6L5zkbio5osZs1HEWXFKyoX4QaMuFYUnvy3Xxc)
 
 
 Data directory structure
